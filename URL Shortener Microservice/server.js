@@ -22,7 +22,6 @@ app.post('/api/shorturl', (req, res) => {
 
   const url = req.body.url
 
-  console.log(url)
   const urlRE = /^(ftp|http|https):\/\/[^ "]+$/
 
   if (!urlRE.test(url)) {
