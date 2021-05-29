@@ -38,7 +38,7 @@ app.post('/api/shorturl', (req, res) => {
 app.get('/api/shorturl/:shorturl', (req, res) => {
 
   let shorturl = req.params.shorturl
-  shorturl = parseInt(shorturl)
+//   shorturl = parseInt(shorturl)
   const url = urlList[shorturl - 1]
 
   return res.redirect(url)
