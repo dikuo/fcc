@@ -20,7 +20,6 @@ def arithmetic_arranger(problems, isSolve = False):
       if (len(num1) > 4 or len(num2) > 4):
         return 'Error: Numbers cannot be more than four digits.'
 
-
       if (len(num1) >= len(num2)):
         largerLen = len(num1)
         smallerLen = len(num2)
